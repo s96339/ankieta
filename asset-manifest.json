@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ankieta-dsis/static/css/main.987cf505.css",
+    "main.js": "/ankieta-dsis/static/js/main.fef29784.js",
+    "index.html": "/ankieta-dsis/index.html",
+    "main.987cf505.css.map": "/ankieta-dsis/static/css/main.987cf505.css.map",
+    "main.fef29784.js.map": "/ankieta-dsis/static/js/main.fef29784.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.987cf505.css",
+    "static/js/main.fef29784.js"
+  ]
+}
