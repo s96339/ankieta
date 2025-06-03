@@ -1,38 +1,179 @@
+/* src/App.css */
 .App {
-  text-align: center;
+	text-align: center;
+	font-family: sans-serif;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header,
+footer {
+	background-color: #282c34;
+	padding: 7px;
+	color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container,
+.image-comparison-container,
+.thank-you-container {
+	border: 1px solid #ccc;
+	padding: 20px;
+	background-color: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-container div {
+	margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"] /* Jeśli dodasz email */ {
+	width: calc(100% - 22px); /* Uwzględnia padding i border */
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.images-display {
+	display: flex;
+	flex-wrap: wrap; /* Dodaj tę właściwość */
+	justify-content: space-around;
+	align-items: flex-start; /* Lub center */
+	margin-bottom: 20px;
+	gap: 20px; /* Odstęp między obrazami */
+	position: relative;
+}
+
+.image-wrapper {
+	/* Ustaw minimalną szerokość dla każdego obrazka,
+		 aby wymusić zawijanie, gdy brakuje miejsca */
+	flex: 1 1 auto; /* Pozwala na elastyczne rozciąganie/kurczenie i zawijanie */
+	min-width: 300px; /* Ustaw minimalną szerokość dla pojedynczego obrazka */
+	max-width: 100%; /* Upewnij się, że obrazki nie wychodzą poza kontener */
+	border: 1px solid #eee;
+	padding: 5px;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper h3 {
+	margin-top: 0;
+	font-size: 1em;
+	color: #555;
+}
+
+.images-display img {
+	max-width: calc(100% - 10px); /* Dostosuj w zależności od potrzeb */
+	max-height: 500px;
+	height: auto;
+	display: block;
+	border: 1px solid #ddd;
+	margin: auto;
+}
+
+.rating-scale {
+	margin-top: 20px;
+	text-align: left;
+	max-width: 800px; /* Aby opisy nie były za szerokie */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rating-scale p {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.rating-scale div {
+	margin-bottom: 16px;
+}
+
+.rating-scale label {
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.rating-scale input[type="radio"] {
+	cursor: pointer;
+}
+.form-fieldset {
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+}
+
+.form-fieldset legend {
+	padding: 0 5px;
+	font-weight: bold;
+	color: #333;
+}
+
+.radio-option {
+	margin-bottom: 8px;
+	display: flex; /* Aby label by\u0142 obok inputa */
+	align-items: center; /* Wy\u015brodkowanie w pionie */
+}
+
+.radio-option input[type="radio"] {
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.radio-option label {
+	cursor: pointer;
+	font-weight: normal; /* Domy\u015blnie label jest pogrubiony, mo\u017cna to zmieni\u0107 */
+}
+form > div,
+.form-container > p {
+	text-align: left;
+	text-indent: 0.6em;
+}
+form > div > input {
+	max-width: 40px;
+	margin-left: 0;
+	font-size: large;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+hr {
+	opacity: 0.1;
+}
+footer > p {
+	opacity: 0.8;
+	font-size: smaller;
+	margin: 10px auto;
 }
