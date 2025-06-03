@@ -56,7 +56,7 @@ function ParticipantInfoForm({ onSubmit }) {
 			</p>
 			<p>
 				Ankieta jest w pełni anonimowa, a jej wynik zostanie użyty wyłącznie w
-				celu przeprowadzenia badania w ramach mojej pracy magisterskiej pt.{" "}
+				celu przeprowadzenia badania w ramach pracy magisterskiej pt.{" "}
 				<i>
 					"Wpływ degradacji zawartości plików wybranych formatów stratnej
 					kompresji obrazu na jakość obrazu rekonstruowanego"
