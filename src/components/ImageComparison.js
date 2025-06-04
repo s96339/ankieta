@@ -36,25 +36,11 @@ function ImageComparison({
 			<div className="images-display">
 				<div className="image-wrapper">
 					<h3>Obraz referencyjny</h3>
-					<img
-						src={
-							"https://drive.google.com/thumbnail?id=" +
-							imageSet.original +
-							"&sz=w1000"
-						}
-						alt="Oryginał"
-					/>
+					<img src={imageSet.original} alt="Oryginał" />
 				</div>
 				<div className="image-wrapper">
 					<h3>Obraz oceniany</h3>
-					<img
-						src={
-							"https://drive.google.com/thumbnail?id=" +
-							degradedImage.src +
-							"&sz=w1000"
-						}
-						alt={`Zdegradowana ${degradedImage.id}`}
-					/>
+					<img src={degradedImage.src} alt={degradedImage.id} />
 				</div>
 			</div>
 			<RatingScale

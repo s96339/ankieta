@@ -1,41 +1,147 @@
 export const imageSets = [
 	{
-		id: "set1",
-		original: "13jpmsFyYcjKGMOxBx5ecjONnivPj5sK4", // Ścieżka względem folderu public
+		id: "kodim18",
+		original: "images/originals/kodim18.png",
 		degraded: [
 			{
-				id: "deg1_A",
-				src: "13jpmsFyYcjKGMOxBx5ecjONnivPj5sK4",
-				degradationType: "Bitrate 500kbps",
+				id: "kodim18-1-1.jp2.png",
+				src: "images/degraded/kodim18-1-1.jp2.png",
 			},
 			{
-				id: "deg1_B",
-				src: "/images/degraded/original1_degradationB.jpg",
-				degradationType: "Bitrate 250kbps",
+				id: "kodim18-1-13.jpg.png",
+				src: "images/degraded/kodim18-1-13.jpg.png",
 			},
 			{
-				id: "deg1_C",
-				src: "/images/degraded/original1_degradationC.jpg",
-				degradationType: "Compression 80%",
+				id: "kodim18-1-17.jp2.png",
+				src: "images/degraded/kodim18-1-17.jp2.png",
+			},
+			{
+				id: "kodim18-1-20.jpg.png",
+				src: "images/degraded/kodim18-1-20.jpg.png",
+			},
+			{
+				id: "kodim18-1-67.avif.png",
+				src: "images/degraded/kodim18-1-67.avif.png",
+			},
+			{
+				id: "kodim18-1-69.jpg.png",
+				src: "images/degraded/kodim18-1-69.jpg.png",
+			},
+			{
+				id: "kodim18-1-74.jp2.png",
+				src: "images/degraded/kodim18-1-74.jp2.png",
+			},
+			{
+				id: "kodim18-1-79.webp.png",
+				src: "images/degraded/kodim18-1-79.webp.png",
+			},
+			{
+				id: "kodim18-1-92.webp.png",
+				src: "images/degraded/kodim18-1-92.webp.png",
+			},
+			{
+				id: "kodim18-1-93.webp.png",
+				src: "images/degraded/kodim18-1-93.webp.png",
+			},
+			{
+				id: "kodim18-1-98.webp.png",
+				src: "images/degraded/kodim18-1-98.webp.png",
+			},
+			{
+				id: "kodim18-1-99.avif.png",
+				src: "images/degraded/kodim18-1-99.avif.png",
 			},
 		],
 	},
+
+	{
+		id: "kodim19",
+		original: "images/originals/kodim19.jpg",
+		degraded: [
+			{
+				id: "kodim19-1-12.jp2.png",
+				src: "images/degraded/kodim19-1-12.jp2.png",
+			},
+			{
+				id: "kodim19-1-15.webp.png",
+				src: "images/degraded/kodim19-1-15.webp.png",
+			},
+			{
+				id: "kodim19-1-19.jpg.png",
+				src: "images/degraded/kodim19-1-19.jpg.png",
+			},
+			{
+				id: "kodim19-1-24.webp.png",
+				src: "images/degraded/kodim19-1-24.webp.png",
+			},
+			{
+				id: "kodim19-1-27.webp.png",
+				src: "images/degraded/kodim19-1-27.webp.png",
+			},
+			{
+				id: "kodim19-1-76.avif.png",
+				src: "images/degraded/kodim19-1-76.avif.png",
+			},
+			{
+				id: "kodim19-1-92.jpg.png",
+				src: "images/degraded/kodim19-1-92.jpg.png",
+			},
+		],
+	},
+
 	{
 		id: "kodim22",
-		original: "1cz9zXVGemtFx8uUUWPVWQrXVVrD8lw-D",
+		original: "images/originals/kodim22.jpg",
 		degraded: [
 			{
-				id: "deg2_A",
-				src: "1Vsieks57BMfMsS00R-NCYYjvEefe6Ug6",
+				id: "kodim22-1-22.jpg.png",
+				src: "images/degraded/kodim22-1-22.jpg.png",
 			},
 			{
-				id: "deg2_B",
-				src: "/images/degraded/original2_degradationB.png",
-				degradationType: "Bitrate 300kbps",
+				id: "kodim22-1-23.jp2.png",
+				src: "images/degraded/kodim22-1-23.jp2.png",
+			},
+			{
+				id: "kodim22-1-27.avif.png",
+				src: "images/degraded/kodim22-1-27.avif.png",
+			},
+			{
+				id: "kodim22-1-38.avif.png",
+				src: "images/degraded/kodim22-1-38.avif.png",
+			},
+			{
+				id: "kodim22-1-66.webp.png",
+				src: "images/degraded/kodim22-1-66.webp.png",
+			},
+			{
+				id: "kodim22-1-75.webp.png",
+				src: "images/degraded/kodim22-1-75.webp.png",
 			},
 		],
 	},
-	// Dodaj więcej zestawów obrazów według potrzeb
+
+	{
+		id: "kodim23",
+		original: "images/originals/kodim23.png",
+		degraded: [
+			{
+				id: "kodim23-1-25.jp2.png",
+				src: "images/degraded/kodim23-1-25.jp2.png",
+			},
+			{
+				id: "kodim23-1-52.jpg.png",
+				src: "images/degraded/kodim23-1-52.jpg.png",
+			},
+			{
+				id: "kodim23-1-59.jp2.png",
+				src: "images/degraded/kodim23-1-59.jp2.png",
+			},
+			{
+				id: "kodim23-1-94.webp.png",
+				src: "images/degraded/kodim23-1-94.webp.png",
+			},
+		],
+	},
 ];
 
 export const ratingLabels = [
