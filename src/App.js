@@ -50,9 +50,15 @@ function App() {
 	const handleParticipantInfoSubmit = info => {
 		// info to { age, gender, deviceType }
 		const surveySessionTimestamp = new Date().toISOString();
+
+		const viewportResolution = `${window.innerWidth}x${window.innerHeight}`;
+		const pixelRatio = window.devicePixelRatio || 1;
+
 		setParticipantInfo({
 			...info,
-			surveyTimestamp: surveySessionTimestamp, // Dodajemy timestamp sesji
+			surveyTimestamp: surveySessionTimestamp,
+			viewportResolution: viewportResolution,
+			devicePixelRatio: pixelRatio,
 		});
 		setCurrentStage(STAGES.SURVEY);
 	};
@@ -70,8 +76,10 @@ function App() {
 			gender: participantInfo.gender,
 			deviceType: participantInfo.deviceType,
 			surveyTimestamp: participantInfo.surveyTimestamp,
-			// Dane konkretnej oceny (już bez originalImageId, degradationType, timestamp):
-			...ratingData, // Powinno zawierać degradedImageId, rating
+			viewportResolution: participantInfo.viewportResolution,
+			devicePixelRatio: participantInfo.devicePixelRatio,
+			// Dane konkretnej oceny:
+			...ratingData,
 		};
 
 		try {
@@ -79,7 +87,7 @@ function App() {
 			if (!result.success) {
 				alert(
 					`Wystąpił błąd podczas wysyłania danych oceny dla ${
-						ratingData.degradedImageId // degradedImageId jest w ratingData
+						ratingData.degradedImageId
 					}: ${result.error || result.message}` +
 						"\nTa ocena mogła nie zostać zapisana."
 				);

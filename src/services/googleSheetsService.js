@@ -1,7 +1,5 @@
 // src/services/googleSheetsService.js
-const SCRIPT_URL =
-	"https://script.google.com/macros/s/AKfycbx6Dc7AZt9BQ-YJVwDdeEfUAGdD7uIC4KNhBxSNS_kVZaxAciziDCQ60_JyH_XZ9zPjNQ/exec";
-
+const SCRIPT_URL = `https://script.google.com/macros/s/${process.env.REACT_APP_SCRIPT_ID}/exec`;
 export const sendDataToGoogleSheet = async data => {
 	if (!SCRIPT_URL || SCRIPT_URL === "TWOJ_URL_DO_GOOGLE_APPS_SCRIPT_WEB_APP") {
 		console.error("URL do Google Apps Script nie jest skonfigurowany!");
