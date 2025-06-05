@@ -24,6 +24,19 @@ function App() {
 
 	const submissionPromisesRef = useRef([]);
 
+	// Obliczanie całkowitej liczby obrazów do oceny
+	const totalImagesToRate = imageSets.reduce(
+		(sum, currentSet) => sum + currentSet.degraded.length,
+		0
+	);
+
+	// Obliczanie aktualnie ocenianego obrazu (numer porządkowy)
+	let currentImageNumber = 0;
+	for (let i = 0; i < currentImageSetIndex; i++) {
+		currentImageNumber += imageSets[i].degraded.length;
+	}
+	currentImageNumber += currentDegradedImageIndex + 1;
+
 	useEffect(() => {
 		if (currentStage === STAGES.INFO) {
 			setParticipantInfo(null);
@@ -187,14 +200,27 @@ function App() {
 				const isLastImageSet = currentImageSetIndex === imageSets.length - 1;
 
 				return (
-					<ImageComparison
-						imageSet={currentSet} // originalId jest nadal potrzebne do wyświetlenia obrazu oryginalnego
-						degradedImage={currentDegraded} // degradedId i src są potrzebne do wyświetlenia i wysłania
-						onNextComparison={handleNextComparison}
-						isLastDegraded={isLastDegradedImage}
-						isLastSet={isLastImageSet}
-						isLoading={false}
-					/>
+					<>
+						<ImageComparison
+							imageSet={currentSet} // originalId jest nadal potrzebne do wyświetlenia obrazu oryginalnego
+							degradedImage={currentDegraded} // degradedId i src są potrzebne do wyświetlenia i wysłania
+							onNextComparison={handleNextComparison}
+							isLastDegraded={isLastDegradedImage}
+							isLastSet={isLastImageSet}
+							isLoading={false}
+						/>
+						<div className="progress-bar-container">
+							Postęp: {currentImageNumber} z {totalImagesToRate}
+							<div className="progress-bar">
+								<div
+									className="progress-bar-fill"
+									style={{
+										width: `${(currentImageNumber / totalImagesToRate) * 100}%`,
+									}}
+								></div>
+							</div>
+						</div>
+					</>
 				);
 			case STAGES.THANKS:
 				return <ThankYouPage onRestart={handleRestartSurvey} />;

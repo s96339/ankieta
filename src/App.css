@@ -183,3 +183,25 @@ footer > p {
 	font-size: smaller;
 	margin: 10px auto;
 }
+.progress-bar-container {
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 0.9em;
+	color: #555;
+}
+
+.progress-bar {
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	height: 10px;
+	margin-top: 5px;
+	overflow: hidden; /* Aby zaokrąglenie działało dla paska wypełnienia */
+}
+
+.progress-bar-fill {
+	background-color: #4caf7d;
+	height: 100%;
+	border-radius: 5px;
+	transition: width 0.3s ease-in-out;
+}
