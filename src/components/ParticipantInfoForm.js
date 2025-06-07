@@ -63,6 +63,12 @@ function ParticipantInfoForm({ onSubmit }) {
 				</i>
 				.
 			</p>
+			<p>
+				<b>
+					Przewidywany czas wypełnienia ankiety: <u>5-10 minut</u>. Brak
+					możliwości powrotu do poprzednich pytań.
+				</b>
+			</p>
 			<hr></hr>
 			<h2>Informacje o Uczestniku</h2>
 			<form onSubmit={handleSubmit}>
@@ -76,6 +82,7 @@ function ParticipantInfoForm({ onSubmit }) {
 						onChange={e => setAge(e.target.value)}
 						min="1"
 						required
+						placeholder="18"
 					/>
 				</div>
 
