@@ -30,7 +30,12 @@ function RatingScale({ selectedValue, onChange, descChange, descState }) {
 			))}
 			<button
 				onClick={() => descChange(prev => !prev)}
-				style={{ fontSize: "smaller" }}
+				style={{
+					fontSize: "smaller",
+					color: "#333",
+					backgroundColor: "#dddde7",
+					border: "1px solid #bbb",
+				}}
 			>
 				{descState ? "Włącz" : "Wyłacz"} opisy 💬
 			</button>
