@@ -9,6 +9,7 @@ function ImageComparison({
 	isLastSet,
 }) {
 	const [currentRating, setCurrentRating] = useState(null);
+	const [descVisible, setDescVisible] = useState(true);
 
 	useEffect(() => {
 		setCurrentRating(null);
@@ -52,6 +53,8 @@ function ImageComparison({
 			<RatingScale
 				selectedValue={currentRating}
 				onChange={handleRatingChange}
+				descChange={setDescVisible}
+				descState={descVisible}
 			/>
 			<button
 				onClick={handleSubmitRating}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ratingLabels } from "../data/images"; // Importujemy etykiety
 
-function RatingScale({ selectedValue, onChange }) {
+function RatingScale({ selectedValue, onChange, descChange, descState }) {
 	return (
 		<div className="rating-scale">
 			<p>Oceń jakość obrazu w porównaniu do obrazu referencyjnego:</p>
@@ -16,9 +16,24 @@ function RatingScale({ selectedValue, onChange }) {
 						onChange={() => onChange(item.value)}
 						required
 					/>
-					<label htmlFor={`rating-${item.value}`}>{item.label}</label>
+					<label htmlFor={`rating-${item.value}`}>
+						{item.label}
+						<div
+							className="ratingDesc"
+							style={{ height: `${descState ? "0px" : "19px"}` }}
+						>
+							{" "}
+							{item.description}
+						</div>
+					</label>
 				</div>
 			))}
+			<button
+				onClick={() => descChange(prev => !prev)}
+				style={{ fontSize: "smaller" }}
+			>
+				{descState ? "Włącz" : "Wyłacz"} opisy 💬
+			</button>
 		</div>
 	);
 }

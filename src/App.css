@@ -205,3 +205,11 @@ footer > p {
 	border-radius: 5px;
 	transition: width 0.3s ease-in-out;
 }
+.ratingDesc {
+	font-style: italic;
+	font-size: smaller;
+	opacity: 0.85;
+	overflow: hidden;
+	will-change: height;
+	transition: 0.2s;
+}
