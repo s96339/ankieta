@@ -1,5 +1,6 @@
 // src/components/ParticipantInfoForm.js
 import React, { useState } from "react";
+import { ratingLabels } from "../data/images";
 
 function ParticipantInfoForm({ onSubmit }) {
 	const [age, setAge] = useState("");
@@ -68,6 +69,16 @@ function ParticipantInfoForm({ onSubmit }) {
 					Przewidywany czas wypełnienia ankiety: <u>5-10 minut</u>. Brak
 					możliwości powrotu do poprzednich pytań.
 				</b>
+			</p>
+			<p>
+				Wyjaśnienie skali oceniania obrazów:
+				<ul>
+					{ratingLabels.map(item => (
+						<li key={item.value}>
+							<b>{item.label}</b> - {item.description}
+						</li>
+					))}
+				</ul>
 			</p>
 			<hr></hr>
 			<h2>Informacje o Uczestniku</h2>

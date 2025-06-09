@@ -225,9 +225,13 @@ export const imageSets = [
 ];
 
 export const ratingLabels = [
-	{ value: 5, label: "Brak widocznych zniekształceń" },
-	{ value: 4, label: "Mało widoczne zniekształcenia" },
-	{ value: 3, label: "Zauważalne zniekształcenia" },
-	{ value: 2, label: "Częściowo nieczytelny" },
-	{ value: 1, label: "W większości nieczytelny" },
+	{
+		value: 5,
+		label: "Brak widocznych zniekształceń",
+		description: "nie widać żadnych różnic między dwoma obrazami,",
+	},
+	{ value: 4, label: "Mało widoczne zniekształcenia", description: "" },
+	{ value: 3, label: "Zauważalne zniekształcenia", description: "23" },
+	{ value: 2, label: "Częściowo nieczytelny", description: "2" },
+	{ value: 1, label: "W większości nieczytelny", description: "1" },
 ];
