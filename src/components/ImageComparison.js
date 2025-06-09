@@ -9,7 +9,7 @@ function ImageComparison({
 	isLastSet,
 }) {
 	const [currentRating, setCurrentRating] = useState(null);
-	const [descVisible, setDescVisible] = useState(true);
+	const [descVisible, setDescVisible] = useState(false);
 
 	useEffect(() => {
 		setCurrentRating(null);

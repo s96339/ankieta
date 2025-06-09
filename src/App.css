@@ -115,7 +115,7 @@ button:disabled {
 	margin-bottom: 10px;
 }
 
-.rating-scale div {
+.rating-scale > div {
 	margin-bottom: 16px;
 }
 
@@ -210,10 +210,11 @@ footer > p {
 	grid-template-rows: 0fr;
 	font-style: italic;
 	font-size: smaller;
-	opacity: 0.85;
-	overflow: hidden;
-	will-change: grid-template-rows;
+	opacity: 0.8;
 	transition: 0.2s grid-template-rows ease;
+}
+.ratingDesc > div {
+	overflow: hidden;
 }
 ul {
 	text-align: left;
