@@ -206,10 +206,18 @@ footer > p {
 	transition: width 0.3s ease-in-out;
 }
 .ratingDesc {
+	display: grid;
+	grid-template-rows: 0fr;
 	font-style: italic;
 	font-size: smaller;
 	opacity: 0.85;
 	overflow: hidden;
-	will-change: height;
-	transition: 0.2s;
+	will-change: grid-template-rows;
+	transition: 0.2s grid-template-rows ease;
+}
+ul {
+	text-align: left;
+}
+ul > li {
+	margin-bottom: 0.8em;
 }

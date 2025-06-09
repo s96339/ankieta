@@ -70,17 +70,15 @@ function ParticipantInfoForm({ onSubmit }) {
 					możliwości powrotu do poprzednich pytań.
 				</b>
 			</p>
-			<p>
-				Wyjaśnienie skali oceniania obrazów:
-				<ul>
-					{ratingLabels.map(item => (
-						<li key={item.value}>
-							<b>{item.label}</b> - {item.description}
-							{item.value === 1 ? "." : ";"}
-						</li>
-					))}
-				</ul>
-			</p>
+			<p>Wyjaśnienie skali oceniania obrazów:</p>
+			<ul>
+				{ratingLabels.map(item => (
+					<li key={item.value}>
+						<b>{item.label}</b> - {item.description}
+						{item.value === 1 ? "." : ";"}
+					</li>
+				))}
+			</ul>
 			<hr></hr>
 			<h2>Informacje o Uczestniku</h2>
 			<form onSubmit={handleSubmit}>

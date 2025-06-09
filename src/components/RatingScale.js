@@ -20,10 +20,9 @@ function RatingScale({ selectedValue, onChange, descChange, descState }) {
 						{item.label}
 						<div
 							className="ratingDesc"
-							style={{ height: `${descState ? "0px" : "100%"}` }}
+							style={{ gridTemplateRows: `${descState ? "0fr" : "0fr"}` }}
 						>
-							{" "}
-							{item.description}
+							<div>{item.description}</div>
 						</div>
 					</label>
 				</div>
