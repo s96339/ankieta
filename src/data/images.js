@@ -228,10 +228,30 @@ export const ratingLabels = [
 	{
 		value: 5,
 		label: "Brak widocznych zniekształceń",
-		description: "nie widać żadnych różnic między dwoma obrazami,",
+		description: "nie widać żadnych różnic między dwoma obrazami",
 	},
-	{ value: 4, label: "Mało widoczne zniekształcenia", description: "" },
-	{ value: 3, label: "Zauważalne zniekształcenia", description: "23" },
-	{ value: 2, label: "Częściowo nieczytelny", description: "2" },
-	{ value: 1, label: "W większości nieczytelny", description: "1" },
+	{
+		value: 4,
+		label: "Mało widoczne zniekształcenia",
+		description:
+			"między obrazami istnieją mało widoczne różnice występujące na małym obszarze",
+	},
+	{
+		value: 3,
+		label: "Zauważalne zniekształcenia",
+		description:
+			"zniekształcenia są łatwo zauważalne, lecz nie zakrywają treści obrazu",
+	},
+	{
+		value: 2,
+		label: "Częściowo nieczytelny",
+		description:
+			"zniekształcenia zakrywają treść obrazu na niewielkim obszarze",
+	},
+	{
+		value: 1,
+		label: "W większości nieczytelny",
+		description:
+			"zniekształcenia zakrywają treść obrazu na znacząco dużym obszarze",
+	},
 ];
