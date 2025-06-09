@@ -20,7 +20,7 @@ function RatingScale({ selectedValue, onChange, descChange, descState }) {
 						{item.label}
 						<div
 							className="ratingDesc"
-							style={{ height: `${descState ? "0px" : "19px"}` }}
+							style={{ height: `${descState ? "0px" : "100%"}` }}
 						>
 							{" "}
 							{item.description}
