@@ -76,6 +76,7 @@ function ParticipantInfoForm({ onSubmit }) {
 					{ratingLabels.map(item => (
 						<li key={item.value}>
 							<b>{item.label}</b> - {item.description}
+							{item.value === 1 ? "." : ";"}
 						</li>
 					))}
 				</ul>
