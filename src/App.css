@@ -2,7 +2,7 @@
 .App {
 	text-align: center;
 	font-family: sans-serif;
-	max-width: 900px;
+	max-width: 920px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -95,7 +95,7 @@ button:disabled {
 
 .images-display img {
 	max-width: calc(100% - 10px); /* Dostosuj w zależności od potrzeb */
-	max-height: 500px;
+	max-height: 585px;
 	height: auto;
 	display: block;
 	border: 1px solid #ddd;

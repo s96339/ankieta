@@ -36,11 +36,17 @@ function ImageComparison({
 			<div className="images-display">
 				<div className="image-wrapper">
 					<h3>Obraz referencyjny</h3>
-					<img src={imageSet.original} alt="Oryginał" />
+					<img
+						src={process.env.PUBLIC_URL + "/" + imageSet.original}
+						alt="Oryginał"
+					/>
 				</div>
 				<div className="image-wrapper">
 					<h3>Obraz oceniany</h3>
-					<img src={degradedImage.src} alt={degradedImage.id} />
+					<img
+						src={process.env.PUBLIC_URL + "/" + degradedImage.src}
+						alt={degradedImage.id}
+					/>
 				</div>
 			</div>
 			<RatingScale
