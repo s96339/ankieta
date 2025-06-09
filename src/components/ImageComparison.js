@@ -53,20 +53,31 @@ function ImageComparison({
 			<RatingScale
 				selectedValue={currentRating}
 				onChange={handleRatingChange}
-				descChange={setDescVisible}
 				descState={descVisible}
 			/>
-			<button
-				onClick={handleSubmitRating}
-				disabled={
-					currentRating ===
-					null /* || isLoading - można usunąć, jeśli isLoading nie jest już tu relevantne */
-				}
-			>
-				{isLastDegraded && isLastSet
-					? "Zakończ i wyślij ostatnią ocenę"
-					: "Następne porównanie"}
-			</button>
+			<div className="buttonFlex">
+				<button
+					onClick={() => setDescVisible(prev => !prev)}
+					style={{
+						color: "#333",
+						backgroundColor: "#dddde7",
+						border: "1px solid #bbb",
+					}}
+				>
+					{descVisible ? "Wyłącz" : "Włącz"} opisy 💬
+				</button>
+				<button
+					onClick={handleSubmitRating}
+					disabled={
+						currentRating ===
+						null /* || isLoading - można usunąć, jeśli isLoading nie jest już tu relevantne */
+					}
+				>
+					{isLastDegraded && isLastSet
+						? "Zakończ i wyślij ostatnią ocenę"
+						: "Następne porównanie"}
+				</button>
+			</div>
 		</div>
 	);
 }
