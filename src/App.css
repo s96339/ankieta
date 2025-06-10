@@ -223,6 +223,9 @@ footer > p {
 }
 ul {
 	text-align: left;
+	list-style: square;
+	padding-left: 1.4em;
+	text-indent: 0.2em;
 }
 ul > li {
 	margin-bottom: 0.8em;
