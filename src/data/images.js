@@ -4,20 +4,24 @@ export const imageSets = [
 		original: "images/originals/kodim18.png",
 		degraded: [
 			{
-				id: "kodim18-1-13.jpg.png",
-				src: "images/degraded/kodim18-1-13.jpg.png",
+				id: "kodim18-1-93.webp.png",
+				src: "images/degraded/kodim18-1-93.webp.png",
 			},
 			{
 				id: "kodim18-1-1.jp2.png",
 				src: "images/degraded/kodim18-1-1.jp2.png",
 			},
 			{
-				id: "kodim18-1-17.jp2.png",
-				src: "images/degraded/kodim18-1-17.jp2.png",
-			},
-			{
 				id: "kodim18-1-18.jpg.png",
 				src: "images/degraded/kodim18-1-18.jpg.png",
+			},
+			{
+				id: "kodim18-1-13.jpg.png",
+				src: "images/degraded/kodim18-1-13.jpg.png",
+			},
+			{
+				id: "kodim18-1-17.jp2.png",
+				src: "images/degraded/kodim18-1-17.jp2.png",
 			},
 			{
 				id: "kodim18-1-2.avif.png",
@@ -62,10 +66,6 @@ export const imageSets = [
 			{
 				id: "kodim18-1-92.webp.png",
 				src: "images/degraded/kodim18-1-92.webp.png",
-			},
-			{
-				id: "kodim18-1-93.webp.png",
-				src: "images/degraded/kodim18-1-93.webp.png",
 			},
 			{
 				id: "kodim18-1-98.webp.png",
