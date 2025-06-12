@@ -218,7 +218,7 @@ function App() {
 							isLoading={false}
 						/>
 						<div className="progress-bar-container">
-							Postęp: {currentImageNumber} z {totalImagesToRate}
+							Postęp:
 							<div className="progress-bar">
 								<div
 									className="progress-bar-fill"
