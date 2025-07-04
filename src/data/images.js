@@ -1,79 +1,11 @@
 export const imageSets = [
 	{
-		id: "kodim18",
-		original: "images/originals/kodim18.png",
+		id: "img1",
+		original: "images/originals/img1.png",
 		degraded: [
 			{
-				id: "kodim18-1-93.webp.png",
-				src: "images/degraded/kodim18-1-93.webp.png",
-			},
-			{
-				id: "kodim18-1-1.jp2.png",
-				src: "images/degraded/kodim18-1-1.jp2.png",
-			},
-			{
-				id: "kodim18-1-18.jpg.png",
-				src: "images/degraded/kodim18-1-18.jpg.png",
-			},
-			{
-				id: "kodim18-1-13.jpg.png",
-				src: "images/degraded/kodim18-1-13.jpg.png",
-			},
-			{
-				id: "kodim18-1-17.jp2.png",
-				src: "images/degraded/kodim18-1-17.jp2.png",
-			},
-			{
-				id: "kodim18-1-2.avif.png",
-				src: "images/degraded/kodim18-1-2.avif.png",
-			},
-			{
-				id: "kodim18-1-20.jpg.png",
-				src: "images/degraded/kodim18-1-20.jpg.png",
-			},
-			{
-				id: "kodim18-1-24.jpg.png",
-				src: "images/degraded/kodim18-1-24.jpg.png",
-			},
-			{
-				id: "kodim18-1-30.jp2.png",
-				src: "images/degraded/kodim18-1-30.jp2.png",
-			},
-			{
-				id: "kodim18-1-67.avif.png",
-				src: "images/degraded/kodim18-1-67.avif.png",
-			},
-			{
-				id: "kodim18-1-69.jpg.png",
-				src: "images/degraded/kodim18-1-69.jpg.png",
-			},
-			{
-				id: "kodim18-1-74.jp2.png",
-				src: "images/degraded/kodim18-1-74.jp2.png",
-			},
-			{
-				id: "kodim18-1-79.jp2.png",
-				src: "images/degraded/kodim18-1-79.jp2.png",
-			},
-			{
-				id: "kodim18-1-79.webp.png",
-				src: "images/degraded/kodim18-1-79.webp.png",
-			},
-			{
-				id: "kodim18-1-87.jpg.png",
-				src: "images/degraded/kodim18-1-87.jpg.png",
-			},
-			{
-				id: "kodim18-1-92.webp.png",
-				src: "images/degraded/kodim18-1-92.webp.png",
-			},
-			{
-				id: "kodim18-1-98.webp.png",
-				src: "images/degraded/kodim18-1-98.webp.png",
-			},
-			{
-				id: "kodim18-1-99.avif.png",
-				src: "images/degraded/kodim18-1-99.avif.png",
+				id: "img1_unet_denoised.jpg",
+				src: "images/degraded/img1_unet_denoised.jpg",
 			},
 		],
 	},
@@ -225,6 +157,11 @@ export const imageSets = [
 ];
 
 export const ratingLabels = [
+	{
+		value: 6,
+		label: "zajebiscie",
+		description: "nie widać żadnych różnic między dwoma obrazami",
+	},
 	{
 		value: 5,
 		label: "Brak widocznych zniekształceń",
