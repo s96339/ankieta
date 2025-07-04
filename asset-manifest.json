@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ankieta-dsis/static/css/main.a55db76e.css",
-    "main.js": "/ankieta-dsis/static/js/main.f2a23652.js",
-    "index.html": "/ankieta-dsis/index.html",
-    "main.a55db76e.css.map": "/ankieta-dsis/static/css/main.a55db76e.css.map",
-    "main.f2a23652.js.map": "/ankieta-dsis/static/js/main.f2a23652.js.map"
+    "main.css": "/ankieta/static/css/main.a55db76e.css",
+    "main.js": "/ankieta/static/js/main.e54040cd.js",
+    "index.html": "/ankieta/index.html",
+    "main.a55db76e.css.map": "/ankieta/static/css/main.a55db76e.css.map",
+    "main.e54040cd.js.map": "/ankieta/static/js/main.e54040cd.js.map"
   },
   "entrypoints": [
     "static/css/main.a55db76e.css",
-    "static/js/main.f2a23652.js"
+    "static/js/main.e54040cd.js"
   ]
 }
