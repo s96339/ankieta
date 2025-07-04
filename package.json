@@ -1,6 +1,6 @@
 {
-	"name": "ankieta-dsis",
-	"homepage": "https://s96339.github.io/ankieta-dsis",
+	"name": "ankieta",
+	"homepage": "https://s96339.github.io/ankieta",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
